@@ -11,5 +11,4 @@ def index(request):
     # Note that the first parameter is the template we wish to use.
     return render(request, 'rango/index.html', context=context_dict)
 def about(request):
-    return HttpResponse("<a href='http://localhost:8000'>index</a>")
-
+    return render(request, 'rango/about.html')
